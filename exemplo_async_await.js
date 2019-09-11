@@ -26,4 +26,5 @@ async function calculaCotacao(url){
         console.error("ERRO AO CONECTAR COM A API: "+error)
     }
 }
+
 calculaCotacao(urlApi);
