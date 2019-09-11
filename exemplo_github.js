@@ -16,10 +16,10 @@ async function getGithub(){
     const resp = await fetch('https://api.github.com/users/g1ll');
     const json = await (response=>response.json())(resp);
     (data=>{
-      console.log(`ASYNC/AWAIT: ${data.name}
+      console.info(`%cASYNC/AWAIT: ${data.name}
       ${data.company}
       ${data.location}
-      \n\t${data.bio}`)
+      \n\t${data.bio}`,'s')
       //console.table(data); 
     })(json)
   }catch(e){
