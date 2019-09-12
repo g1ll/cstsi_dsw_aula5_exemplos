@@ -1,0 +1,27 @@
+#loading{
+    visibility: hidden;
+    width: 25%;
+    height: 5px;
+    background-color: blue;
+    position: relative;
+    margin: 50% auto;
+    border-radius: 100%;
+  
+    animation: bar 1s infinite linear;
+  }
+  
+  @keyframes bar {
+    0%{width:25%;transform: rotate(0deg)}
+    50%{width:100%;}
+    75%{width:50%;}
+    100%{width:25%;transform: rotate(360deg)}
+  }
+  
+  #loading.show {
+    visibility: visible;
+  }
+  
+  .container-load{
+    width: 80px;
+    height: 80px;
+  }

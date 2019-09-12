@@ -20,7 +20,7 @@ async function getGithub(){
       ${data.company}
       ${data.location}
       \n\t${data.bio}`,'s')
-      //console.table(data); 
+      console.table(data); 
     })(json)
   }catch(e){
     console.error("ERRO : "+e)

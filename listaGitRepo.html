@@ -8,16 +8,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
+     <script src="js/getGitRepoxhr.js" async defer></script>
 </head>
 
 <body>
-    <form name='cadastro' method='post'>
-        Nome:<input type="text" name="nome">
-        <br>Altura:<input type="number" name="alt" step="0.1">
-        <br>Peso:<input type="number" name="peso" step="0.1">
-        <br><input type="submit">
-    </form>
-    <script src="js/inserehtml.js" async defer></script>
+    <button onclick="carregaDados()">Mostrar Dados</button>
+    <div id='dados'></div>
+   
 </body>
 
 </html>

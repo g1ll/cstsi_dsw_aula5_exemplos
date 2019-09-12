@@ -1,0 +1,32 @@
+#loading{
+    visibility: hidden;
+    width: 35px;
+    height: 35px;
+  
+    border: 15px dotted #071de7;
+    border-top:15px dotted white;
+    border-bottom:15px dotted #071de7;
+    border-radius: 100%;
+  
+    position: relative;
+    margin: 10% auto;
+  
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  #loading.show {
+    visibility: visible;
+  }
+  
+  .container-load{
+    width: 100px;
+    height: 100px;
+  }

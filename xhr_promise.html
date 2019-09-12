@@ -11,13 +11,9 @@
 </head>
 
 <body>
-    <form name='cadastro' method='post'>
-        Nome:<input type="text" name="nome">
-        <br>Altura:<input type="number" name="alt" step="0.1">
-        <br>Peso:<input type="number" name="peso" step="0.1">
-        <br><input type="submit">
-    </form>
-    <script src="js/inserehtml.js" async defer></script>
+    <button onclick="carregaDados()">Mostrar Dados</button>
+    <div id='dados'></div>
+    <script src="js/promiseXHR.js" async defer></script>
 </body>
 
 </html>
