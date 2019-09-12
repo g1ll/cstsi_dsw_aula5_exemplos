@@ -12,19 +12,41 @@ console.log(`Cotanção do Dolar em ${data}`);
 
 //urlApi = `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='${data}'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao`
 urlApi = 'https://api.hgbrasil.com/finance'
-async function calculaCotacao(url){
+
+trataResp = response=>response.json();
+calculaCotacao = async ()=>{  
+    const data = await getDollarAPI(urlApi)
+    let cotDolar = data.results.currencies.USD;
+    console.log(`Dolar no ${data.results.currencies.source} está a R$ ${cotDolar.sell} a venda e R$ ${cotDolar.buy} a compra.`);
+    console.log("Informe um valor em R$: ");
+    let valor = Number(scanf("%f"));
+    console.log(`R$ ${valor} equivalem a US$ ${(valor/cotDolar.buy).toFixed(2)} `);
+    return valor;
+}
+async function getDollarAPI(url){
     try{
         const resp = await fetch(url);
-        const json = await (response => response.json())(resp);
-        (data=>{  let cotDolar = data.results.currencies.USD;
-            console.log(`Dolar no ${data.results.currencies.source} está a R$ ${cotDolar.sell} a venda e R$ ${cotDolar.buy} a compra.`);
-            console.log("Informe um valor em R$: ");
-            let valor = Number(scanf("%f"));
-            console.log(`R$ ${valor} equivalem a US$ ${(valor/cotDolar.buy).toFixed(2)} `);
-        })(json);
+        const json = await trataResp(resp);
+        return json;
     }catch(error){
         console.error("ERRO AO CONECTAR COM A API: "+error)
     }
-}
+}   
 
-calculaCotacao(urlApi);
+calculaCotacao();
+
+//SINTAXE FUNÇÃO IMEDIADTA
+// ;(async (url)=>{
+//     try{
+//         const resp = await fetch(url);
+//         const json = await (response => response.json())(resp);
+//         (data=>{  let cotDolar = data.results.currencies.USD;
+//             console.log(`Dolar no ${data.results.currencies.source} está a R$ ${cotDolar.sell} a venda e R$ ${cotDolar.buy} a compra.`);
+//             console.log("Informe um valor em R$: ");
+//             let valor = Number(scanf("%f"));
+//             console.log(`R$ ${valor} equivalem a US$ ${(valor/cotDolar.buy).toFixed(2)} `);
+//         })(json);
+//     }catch(error){
+//         console.error("ERRO AO CONECTAR COM A API: "+error)
+//     }
+// })(urlApi);
