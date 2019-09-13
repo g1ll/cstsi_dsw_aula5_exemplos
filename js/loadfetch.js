@@ -12,7 +12,7 @@ const divData = document.querySelector('#data');
 function showLoader() {
     document.querySelector('.container-load').style.display='block';
     console.log(loading);
-    loading.className = "show";
+
 }
 function hiddeLoader(){
     loading.className = "";
