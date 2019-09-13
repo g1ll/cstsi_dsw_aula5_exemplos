@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const scanf = require('scanf');
-const urlApi = 'http://g1ll.000webhostapp.com/ajaxphp/imcapi.php'
-//const urlApi = 'http://localhost/2018/cpw2/ajaxphp_2018/imcapi.php'
+//const urlApi = 'http://g1ll.000webhostapp.com/ajaxphp/imcapi.php'
+const urlApi = 'http://localhost/2018/cpw2/ajaxphp_2018/imcapi.php'
 console.log("ID do registro a ser editado: ");
 const id = scanf("%d");
 

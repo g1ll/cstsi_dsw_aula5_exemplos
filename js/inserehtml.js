@@ -1,5 +1,9 @@
 //http://g1ll.000webhostapp.com/ajaxphp/consulta.php
 //const fetch = require('node-fetch');
+
+ const urlapi = "http://g1ll.000webhostapp.com/ajaxphp/insere.php"
+//const urlapi = "http://localhost/2018/cpw2/ajaxphp_2018/insere.php"
+ 
 document.cadastro.onsubmit = function(e) {
     e.preventDefault();
 
@@ -11,9 +15,10 @@ document.cadastro.onsubmit = function(e) {
     }
 
     const dataform = new FormData();
-    Object.entries(novoObj).map(([key, value]) => { dataform.append(key, value) });
+    Object.entries(novoObj).map(([key, value]) => {
+         dataform.append(key, value) });
 
-    fetch('http://g1ll.000webhostapp.com/ajaxphp/insere.php', {
+    fetch(urlapi, {
         method: 'POST',
         body: dataform,
         mode: 'cors'

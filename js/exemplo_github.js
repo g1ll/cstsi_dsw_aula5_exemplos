@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+
 fetch('https://api.github.com/users/g1ll')
 .then(response => response.json())
 .then(data => {

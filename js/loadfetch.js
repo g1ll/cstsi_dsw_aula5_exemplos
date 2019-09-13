@@ -11,6 +11,7 @@ const divData = document.querySelector('#data');
 
 function showLoader() {
     document.querySelector('.container-load').style.display='block';
+    loading.className='show'
     console.log(loading);
 
 }

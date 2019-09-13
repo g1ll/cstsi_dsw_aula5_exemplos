@@ -14,7 +14,7 @@ const alt = scanf("%f");
 console.log("Novo peso: ");
 const peso = scanf("%f");
 console.info("NOVOS DADOS:");
-console.table([id,nome,peso,alt]);
+console.table([id,nome,peso,alt])
 
 ;(async (url)=>{
     try{
@@ -22,11 +22,11 @@ console.table([id,nome,peso,alt]);
         (data=>{
             if(data.sucesso){
                 console.log(`Registro ${data.id} atualizado.!`)
-                console.table(data.row);
+                //console.table(data.row);
             }else{ console.error(`Não foi possível atualizar o registro de ID:${id}`)}
                 console.table(data);
         })(resp.data);
     }catch(error){
         console.error("ERRO AO CONECTAR COM A API: "+error)
     }
-})(urlApi);
+})(urlApi)
