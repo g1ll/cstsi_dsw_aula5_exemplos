@@ -3,13 +3,18 @@
 
 const fetch = require('node-fetch');
 const scanf = require('scanf')
+const write = console.info;
+const clear = console.clear;
 
+clear()
+//process.stdout.write("\u001b[2J\u001b[0;0H");
+write("\nRecuperando informações:");
 let data = new Date();
 options = {day: '2-digit', month: '2-digit', year: 'numeric'};
 data = data.toLocaleDateString("pt-BR", options);
 data = data.split("-").reverse().join("-");
 console.log(`Cotanção do Dolar em ${data}`);
-
+ 
 //urlApi = `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='${data}'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao`
 urlApi = 'https://api.hgbrasil.com/finance'
 

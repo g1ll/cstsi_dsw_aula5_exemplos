@@ -3,6 +3,7 @@ const fetch = require('node-fetch');
 fetch('https://api.github.com/users/g1ll')
 .then(response => response.json())
 .then(data => {
+  console.log('\033[2J');
   console.log(`${data.name}
   ${data.company}
   ${data.location}
@@ -11,7 +12,7 @@ fetch('https://api.github.com/users/g1ll')
 })
 .catch(error => console.error(error))
 
-//SINTAXE COM ASYNC/AWAIT
+//SINTAXE COM ASYNC/AWAIT  
 async function getGithub(){ 
   try{
     const resp = await fetch('https://api.github.com/users/g1ll');
