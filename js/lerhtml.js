@@ -4,14 +4,11 @@
 console.clear();
 
 fetch('http://g1ll.000webhostapp.com/ajaxphp/consulta.php')
-    .then(response => {
-        return response.json()
-    }).then(data => {
+    .then(response  => {
+        const data = response.json();
         if (data.length) {
-            console.table(data)
             let table = '<table border=1>'
             data.forEach(obj => {
-                console.log(obj)
                 table += '<tr>'
                 Object.entries(obj).map(([key, value]) => {
                     table += `<td>${value}</td>`
