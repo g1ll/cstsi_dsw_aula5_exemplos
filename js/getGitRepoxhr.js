@@ -1,6 +1,5 @@
 const apiUrl = 'https://api.github.com/users/g1ll/repos';
-let div;
-window.onload = function(){ div = document.getElementById('dados');}
+let div = document.getElementById('dados');
 let loadloop;
 
 function mostraTabela () {

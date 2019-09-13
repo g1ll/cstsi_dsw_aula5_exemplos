@@ -1,4 +1,4 @@
-//http://g1ll.000webhostapp.com/ajaxphp/consulta.php
+const url = http://g1ll.000webhostapp.com/ajaxphp/consulta.php
 const fetch = require('node-fetch');
 const FormData = require('form-data');
 const scanf = require('scanf')
@@ -21,10 +21,6 @@ const novoObj = {
     imc: Number((peso / alt ** 2).toFixed(2))
 }
 
-// console.log(novoObj)
-// console.log(JSON.stringify(novoObj))
-// var params = Object.keys(novoObj).map(key => `"${key}":"${novoObj[key]}"`);
-// console.log(`{ ${params.join(',')}}`);
 
 const dataform = new FormData();
 
@@ -33,12 +29,7 @@ Object.entries(novoObj).map(([key, value]) => {
     dataform.append(key, value)
 });
 
-/*
-let queryString = Object.keys(params).map((key) => {
-    return encodeURIComponent(key) + '=' + encodeURIComponent(params[key])
-}).join('&');
-*/
-fetch('http://g1ll.000webhostapp.com/ajaxphp/insere.php', {
+fetch(url, {
         method: 'POST',
         //body: JSON.stringify(novoObj),
         body: dataform,

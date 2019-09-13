@@ -19,20 +19,38 @@ function get(url) {
     });
   }
   
-  function addSearchHeader(response) {
-    try {
-      //response = JSON.parse(response);
-      console.log('OK:', response);
-      console.table(JSON.parse(response));
-    } catch (e) {
-      console.log('erro:', e);
-      console.error(e)
-    }
-  }
   
   const data = "http://g1ll.000webhostapp.com/ajaxphp/consulta.php"
   function carregaDados(){ 
-  get(data)
-    .then(addSearchHeader)
-    .catch(addSearchHeader);
+    get(data)
+      .then(tratandoResposta)
+      .catch(tratandoErro);
   }
+
+  function tratandoResposta(response) {
+    //response = JSON.parse(response);
+    console.log('OK:', response);
+    console.table(JSON.parse(response));
+    mostraTabela(JSON.parse(response));
+
+}
+
+  function tratandoErro(e){
+    console.log('erro:', e);
+      console.error(e)
+  }
+  
+  function mostraTabela (data) {
+      const div = document.getElementById('dados');
+        let table = '<table border=1>'
+        data.forEach(obj => {
+            console.log(obj)
+            table += '<tr>'
+            Object.entries(obj).map(([key, value]) => {
+                table += `<td>${value}</td>`
+            });
+            table += '</tr>'
+        });
+        div.innerHTML += table + '</table>';
+}
+
