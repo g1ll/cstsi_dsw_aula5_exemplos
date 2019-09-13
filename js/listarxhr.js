@@ -1,4 +1,5 @@
-const apiUrl = 'http://localhost/2018/cpw2/ajaxphp_2018/consulta.php';
+// const apiUrl = 'http://localhost/2018/cpw2/ajaxphp_2018/consulta.php';
+const apiUrl = 'http://g1ll.000webhostapp.com/ajaxphp/consulta.php';
 const div = document.getElementById('dados')
 let loadloop;
 function mostraTabela() {
