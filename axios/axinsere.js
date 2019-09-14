@@ -1,5 +1,5 @@
-//const url = 'http://g1ll.000webhostapp.com/ajaxphp/insere.php'
-const url = 'http://localhost/2018/cpw2/ajaxphp_2018/insere.php'
+const url = 'http://g1ll.000webhostapp.com/ajaxphp/insere.php'
+//const url = 'http://localhost/2018/cpw2/ajaxphp_2018/insere.php'
 const axios = require('axios');
 const querystring = require('querystring');
 const scanf = require('scanf')
