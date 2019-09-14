@@ -10,7 +10,9 @@ $imc = filter_input(INPUT_POST,'imc',FILTER_SANITIZE_STRING); //filtra entrada
 var_dump($_POST);die;
 
 if ($name && $alt && $peso  && $imc) {//Testa se digitaram todos os campos
-    $conn = mysqli_connect('localhost',  'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
+   @$conn = mysqli_connect('localhost',  'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
+    if(!$conn)
+    $conn = mysqli_connect('localhost', 'root', 'r00t', 'imcApi');
     //Alterar dados do user e password
     //$conn = mysqli_connect("host=localhost port=3306 dbname=snake user=root password=root");
     //Cria o comando SQL e guarda na variável $sql

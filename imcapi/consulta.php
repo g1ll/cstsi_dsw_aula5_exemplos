@@ -1,9 +1,13 @@
 <?php
+header('Content-Type: charset=UTF-8');
+header('Access-Control-Allow-Headers: *');
+header('Access-Control-Allow-Methods: *');
 header('Access-Control-Allow-Origin: *');
+//header('Access-Control-Allow-Headers: Host, Connection, Accept, Authorization, Content-Type, X-Requested-With, User-Agent, Referer, Methods');
 //Alterar dados do user e password
 @$conn = mysqli_connect('localhost', 'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
 if(!$conn)
-    $conn = mysqli_connect('localhost', 'root', 'r00t', 'imcApi');
+    $conn = mysqli_connect('localhost', 'root', '', 'imcapi');
 $sql = "SELECT * FROM imc ORDER BY id DESC Limit 10"; //Limita até as primeiras cinco posições
 
 $result = mysqli_query($conn, $sql);

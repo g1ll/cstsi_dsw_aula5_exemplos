@@ -2,8 +2,12 @@
 //const fetch = require('node-fetch');
 
 console.clear();
-// const urlapi = "http://g1ll.000webhostapp.com/ajaxphp/consulta.php"
-const urlapi = "http://localhost/2018/cpw2/ajaxphp_2018/consulta.php"
+//servidor remoto, as vezes fora do ar
+const urlapi = "http://g1ll.000webhostapp.com/ajaxphp/consulta.php" 
+//servidor local, deve mudar caminho para o local da máquina
+//const urlapi = "http://localhost/2018/cpw2/ajaxphp_2018/consulta.php"
+//servidor local na pasta imcapi iniciado com o comando: php -S localhost:9090 Não funciona
+//const urlapi = "http://localhost:9090/consulta.php"
   
 
 const loading = document.getElementById('loading');

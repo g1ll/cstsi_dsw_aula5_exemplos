@@ -1,4 +1,4 @@
-const url = http://g1ll.000webhostapp.com/ajaxphp/consulta.php
+const url = 'http://g1ll.000webhostapp.com/ajaxphp/insere.php'
 const fetch = require('node-fetch');
 const FormData = require('form-data');
 const scanf = require('scanf')
@@ -33,8 +33,9 @@ fetch(url, {
         method: 'POST',
         //body: JSON.stringify(novoObj),
         body: dataform,
-        //headers: { 'Content-Type': 'application/json' },
-        //headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        //headers: { 'Content-Type': 'application/json' },//
+        //headers: { 'Content-Type': 'application/x-www-form-urlencoded' },//
+        headers: { 'Content-Type': 'multipart/form-data' },
         mode: 'no-cors'
     })
     .then(response => {
