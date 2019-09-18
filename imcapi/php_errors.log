@@ -1,0 +1,46 @@
+[18-Sep-2019 10:15:59 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 10
+[18-Sep-2019 10:15:59 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 16
+[18-Sep-2019 10:15:59 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 18
+[18-Sep-2019 10:16:04 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 10
+[18-Sep-2019 10:16:04 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 16
+[18-Sep-2019 10:16:04 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 18
+[18-Sep-2019 10:16:20 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 10
+[18-Sep-2019 10:16:20 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 16
+[18-Sep-2019 10:16:20 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 18
+[18-Sep-2019 10:16:37 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 10
+[18-Sep-2019 10:16:37 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 13
+[18-Sep-2019 10:16:37 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 15
+[18-Sep-2019 10:16:52 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 10
+[18-Sep-2019 10:16:52 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 13
+[18-Sep-2019 10:16:52 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 15
+[18-Sep-2019 10:17:24 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 10
+[18-Sep-2019 10:17:24 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 16
+[18-Sep-2019 10:17:24 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 18
+[18-Sep-2019 10:17:51 America/Sao_Paulo] PHP Notice:  Undefined variable: msg in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/imcapi.php on line 37
+[18-Sep-2019 10:17:59 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 10
+[18-Sep-2019 10:17:59 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 13
+[18-Sep-2019 10:17:59 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 15
+[18-Sep-2019 10:18:36 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 10
+[18-Sep-2019 10:18:36 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 13
+[18-Sep-2019 10:18:36 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 15
+[18-Sep-2019 10:19:00 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'imcapi' in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 10
+[18-Sep-2019 10:19:00 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 13
+[18-Sep-2019 10:19:00 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 15
+[18-Sep-2019 10:19:09 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'imcapi' in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 10
+[18-Sep-2019 10:19:09 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 13
+[18-Sep-2019 10:19:09 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/consulta.php on line 15
+[18-Sep-2019 10:20:24 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 10
+[18-Sep-2019 10:20:24 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 16
+[18-Sep-2019 10:20:24 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 18
+[18-Sep-2019 10:20:35 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 10
+[18-Sep-2019 10:20:35 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 16
+[18-Sep-2019 10:20:35 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 18
+[18-Sep-2019 10:22:39 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 18
+[18-Sep-2019 10:52:08 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 21
+[18-Sep-2019 11:35:49 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/mybusca.php:8
+Stack trace:
+#0 {main}
+  thrown in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/mybusca.php on line 8
+[18-Sep-2019 11:37:59 America/Sao_Paulo] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 27
+[18-Sep-2019 11:38:09 America/Sao_Paulo] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 27
+[18-Sep-2019 11:58:13 America/Sao_Paulo] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 27
