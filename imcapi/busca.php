@@ -1,5 +1,5 @@
 <?php
-//header('Content-Type: charset=UTF-8');
+header('Content-Type: charset=UTF-8');
 header('Access-Control-Allow-Headers: *');
 header('Access-Control-Allow-Methods: *');
 header('Access-Control-Allow-Origin: *');
@@ -17,9 +17,9 @@ $result = mysqli_query($conn, $sql);
 if ($result&&mysqli_num_rows($result) > 0) { 
     $jsonData = mysqli_fetch_all($result,MYSQLI_ASSOC);
    //sleep(3);
-   echo"<pre>";
-   var_dump($jsonData);
-   echo"/<pre>";die;
+   //echo"<pre>";
+   //var_dump($jsonData);
+   //echo"/<pre>";die;
    echo json_encode($jsonData);
     mysqli_free_result($result);
     mysqli_close($conn); 

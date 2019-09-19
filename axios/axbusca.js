@@ -1,10 +1,14 @@
+const scanf = require('scanf');
 const axios = require('axios');
-//const apiUrl = 'http://g1ll.000webhostapp.com/ajaxphp/consulta.php';
-//const apiUrl = 'http://localhost/2018/cpw2/ajaxphp_2018/consulta.php';
-//const apiUrl = 'http://localhost:9090/consulta.php';//testando servidor Builtin PHP -S localhost:9090
-const apiUrl = 'http://localhost/consulta.php';//testando servidor Builtin PHP -S localhost:9090
+const apiUrl = 'http://localhost/2019/tsi/dsw/aula5/imcapi/busca.php';
+
+console.log("Informe o termo de busca:")
+let busca = scanf("%s");
+
+
 console.clear()
 console.log(`Conectando a ${apiUrl}`)
+
 
     //tentando configurar cors com serve php -S
     //let opt = {proxy: {
@@ -12,7 +16,7 @@ console.log(`Conectando a ${apiUrl}`)
     //port: 9000}, crossdomain: true,mode:'cors'}
     //axios.get(apiUrl,opt)...
 
-axios.get(apiUrl)
+axios.get(apiUrl+'?busca='+busca)
     .then(resp => {
         console.log('Recebendo dados!');
         if (resp.data) {
