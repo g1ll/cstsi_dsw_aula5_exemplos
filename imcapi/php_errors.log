@@ -44,3 +44,19 @@ Stack trace:
 [18-Sep-2019 11:37:59 America/Sao_Paulo] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 27
 [18-Sep-2019 11:38:09 America/Sao_Paulo] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 27
 [18-Sep-2019 11:58:13 America/Sao_Paulo] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 27
+[19-Sep-2019 00:07:31 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ')' in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 14
+[19-Sep-2019 00:07:50 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ')' in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 14
+[19-Sep-2019 00:14:15 America/Sao_Paulo] PHP Notice:  Undefined index: busca in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 12
+[19-Sep-2019 00:14:35 America/Sao_Paulo] PHP Notice:  Undefined index: busca in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 12
+[19-Sep-2019 00:14:43 America/Sao_Paulo] PHP Notice:  Undefined index: busca in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 12
+[19-Sep-2019 00:14:51 America/Sao_Paulo] PHP Notice:  Undefined index: busca in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 12
+[19-Sep-2019 00:15:39 America/Sao_Paulo] PHP Notice:  Undefined index: busca in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 12
+[19-Sep-2019 00:15:43 America/Sao_Paulo] PHP Notice:  Undefined index: busca in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 12
+[19-Sep-2019 00:16:05 America/Sao_Paulo] PHP Notice:  Undefined index: busca in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 12
+[19-Sep-2019 00:44:27 America/Sao_Paulo] PHP Notice:  Undefined index: busca in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 12
+[19-Sep-2019 00:49:30 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 32
+[19-Sep-2019 00:57:11 America/Sao_Paulo] PHP Notice:  Undefined index: busca in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 12
+[19-Sep-2019 00:58:11 America/Sao_Paulo] PHP Notice:  Undefined variable: busca in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 16
+[19-Sep-2019 01:22:56 America/Sao_Paulo] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 26
+[19-Sep-2019 01:30:07 America/Sao_Paulo] PHP Warning:  mb_detect_encoding() expects parameter 1 to be string, array given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 27
+[19-Sep-2019 01:30:07 America/Sao_Paulo] PHP Warning:  iconv() expects parameter 3 to be string, array given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 29
