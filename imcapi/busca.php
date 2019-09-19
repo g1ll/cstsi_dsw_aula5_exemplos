@@ -10,9 +10,9 @@ header('Access-Control-Allow-Origin: *');
 if(!$conn)
     $conn = mysqli_connect('localhost', 'root', 'r00t', 'imcApi');
 
-//$busca=(isset($_GET['busca']))?$_GET['busca']:'';//Vulnerável à injeção de SQL ("termoDeBusca' or 1=1; --")
+$busca=(isset($_GET['busca']))?$_GET['busca']:'';//Vulnerável à injeção de SQL ("termoDeBusca' or 1=1; --")
 
-$busca = filter_input(INPUT_GET,'busca',FILTER_SANITIZE_STRING);//Filtro contra ataques de injeção de SQL
+//$busca = filter_input(INPUT_GET,'busca',FILTER_SANITIZE_STRING);//Filtro contra ataques de injeção de SQL
 
 $busca = ($busca)?"WHERE name LIKE '%$busca%'":"";
 //var_dump($busca);die;
