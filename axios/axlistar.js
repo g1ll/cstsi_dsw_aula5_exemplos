@@ -11,14 +11,13 @@ console.log(`Conectando a ${apiUrl}`)
     //port: 9000}, crossdomain: true,mode:'cors'}
     //axios.get(apiUrl,opt)...
 
-    axios.get(apiUrl)
-    .then(resp => {
+axios.get(apiUrl)
+.then(resp => {
         console.log('Recebendo dados!');
         if (resp.data) {
             console.table(resp.data)
         }
-    })
-    .catch(error => {
+}).catch(error => {
         console.log(`Erro ao conectar:\n\n${error.message}`)
         console.log(error)
-    });
+});
