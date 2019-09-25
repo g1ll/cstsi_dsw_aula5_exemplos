@@ -11,7 +11,7 @@ console.log(`Conectando a ${apiUrl}`)
     //port: 9000}, crossdomain: true,mode:'cors'}
     //axios.get(apiUrl,opt)...
 
-axios.get(apiUrl)
+    axios.get(apiUrl)
     .then(resp => {
         console.log('Recebendo dados!');
         if (resp.data) {
