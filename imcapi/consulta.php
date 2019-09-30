@@ -1,6 +1,7 @@
 <?php
 //header('Content-Type: charset=UTF-8');
 //header('Access-Control-Allow-Headers: *');
+ header('Content-Type: application/json');
 header('Access-Control-Allow-Methods: *');
 header('Access-Control-Allow-Origin: *');
 //header('Access-Control-Allow-Headers: Host, Connection, Accept, Authorization, Content-Type, X-Requested-With, User-Agent, Referer, Methods');
@@ -15,7 +16,10 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) { 
  
     $jsonData = mysqli_fetch_all($result,MYSQLI_ASSOC);
-   sleep(3);
+   //sleep(3);
+//    $jsonData = null;
+//    var_dump($jsonData);
+//    die;
    echo json_encode($jsonData);
     mysqli_free_result($result);
     mysqli_close($conn); 

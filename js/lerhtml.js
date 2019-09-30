@@ -3,7 +3,10 @@
 
 console.clear();
 
-fetch('http://g1ll.000webhostapp.com/ajaxphp/consulta.php')
+// const apiUrl = 'http://g1ll.000webhostapp.com/ajaxphp/consulta.php';
+const apiUrl = 'http://localhost/2019/tsi/dsw/aula5/imcapi/consulta.php';
+
+fetch(apiUrl)
     .then(response  =>response.json())
     .then(data  => {
         console.log(data);
@@ -23,5 +26,5 @@ fetch('http://g1ll.000webhostapp.com/ajaxphp/consulta.php')
     })
     .catch(error => {
         console.log(`Erro:${error}`)
-        document.body.innerHTML = 'Falha na comunnicação!!'
+        document.body.innerHTML = 'Falha ao receber dados!!'
     });

@@ -14,6 +14,8 @@ console.log(`Conectando a ${apiUrl}`)
 axios.get(apiUrl)
 .then(resp => {
         console.log('Recebendo dados!');
+
+        // console.log(resp.data)
         if (resp.data) {
             console.table(resp.data)
         }
