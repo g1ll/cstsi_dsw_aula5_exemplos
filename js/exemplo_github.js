@@ -28,4 +28,5 @@ async function getGithub(){
     console.error("ERRO : "+e)
   }
 }
+
 getGithub()
