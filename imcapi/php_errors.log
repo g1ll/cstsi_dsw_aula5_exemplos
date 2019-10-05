@@ -60,3 +60,5 @@ Stack trace:
 [19-Sep-2019 01:22:56 America/Sao_Paulo] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 26
 [19-Sep-2019 01:30:07 America/Sao_Paulo] PHP Warning:  mb_detect_encoding() expects parameter 1 to be string, array given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 27
 [19-Sep-2019 01:30:07 America/Sao_Paulo] PHP Warning:  iconv() expects parameter 3 to be string, array given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/busca.php on line 29
+[01-Oct-2019 21:24:17 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/index.php on line 15
+[01-Oct-2019 21:25:07 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'debug' (T_STRING) in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/index.php on line 13

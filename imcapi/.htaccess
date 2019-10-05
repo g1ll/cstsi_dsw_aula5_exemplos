@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /2019/tsi/dsw/aula5/imcapi/
+  RewriteCond $1 !^(index\.php|images|assets|robots\.txt|bootstrap.min.css\.map)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php?q=$1 [L]
+  php_value error_log all_errors.log
+</IfModule>

@@ -21,18 +21,16 @@ const novoObj = {
     peso: peso,
     imc: Number((peso / alt ** 2).toFixed(2))
 }
-
-    const config = {
+const config = {
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Accept': 'application/json'
-        }
-      };
-
-      //navegador usar FormData
-    axios.post(url,querystring.stringify(novoObj),config)
-    .then(resp => {
-        console.log(resp.data)
-    }).catch(error => {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Accept': 'application/json'
+      }
+    };
+      //No navegador usar FormData
+axios.post(url,querystring.stringify(novoObj),config)
+  .then(resp => {
+        console.log(resp.data)  
+  }).catch(error => {
         console.log(`Erro:${error}`)
-    });
+  });
