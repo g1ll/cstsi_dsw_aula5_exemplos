@@ -7,9 +7,8 @@ $alt = filter_input(INPUT_POST,'altura',FILTER_SANITIZE_STRING); //filtra entrad
 $peso = filter_input(INPUT_POST,'peso',FILTER_SANITIZE_STRING); //filtra entrada
 $imc = filter_input(INPUT_POST,'imc',FILTER_SANITIZE_STRING); //filtra entrada
 
+echo "RESPONSE:\n";
 var_dump([$_POST, $_FILES]);die;
-
-
 
 if ($name && $alt && $peso  && $imc) {//Testa se digitaram todos os campos
    @$conn = mysqli_connect('localhost',  'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');

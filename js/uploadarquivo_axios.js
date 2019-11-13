@@ -6,7 +6,8 @@
 const urlapi = "http://localhost/cstsi_dsw_aula5_exemplos/imcapi/";
 const axiosApi = axios.create(
     {   baseURL:urlapi,
-        headers:{'Content-Type':'multpart/form-data'}});
+        headers:{'Content-Type':'multpart/form-data'}}
+        );
 
 document.cadastro.onsubmit = function(e) {
     e.preventDefault();
@@ -34,10 +35,7 @@ document.cadastro.onsubmit = function(e) {
 async function postData(datasent){
     try{
         const resp = await axiosApi.post(
-            'file.php',datasent,
-            {
-                headers:{'Content-Type':'multpart/form-data'}
-            });
+            'file.php',datasent);
         console.log(resp.data)
     }catch(e){
         console.log(e);
