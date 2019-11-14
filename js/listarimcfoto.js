@@ -32,7 +32,7 @@ function mostraTabela(dados,elid) {
                     table += `<li>${key}: ${value}</li>`
                 }
             });
-            table += '</ul></td></tr>'
+            table += '</ul></td></tr>' 
         });
         div.innerHTML += table + '</table>';
     }
