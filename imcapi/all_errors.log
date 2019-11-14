@@ -1,0 +1,9 @@
+[14-Nov-2019 00:28:02 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/listarfoto.php on line 10
+[14-Nov-2019 00:32:21 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/listarfoto.php on line 10
+[14-Nov-2019 00:32:27 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/listarfoto.php on line 10
+[14-Nov-2019 00:32:49 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/listarfoto.php on line 10
+[14-Nov-2019 00:34:32 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_error_info() in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/listarfoto.php:38
+Stack trace:
+#0 {main}
+  thrown in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/listarfoto.php on line 38
+[14-Nov-2019 00:35:17 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'mysqli_error' (T_STRING), expecting ',' or ';' in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/listarfoto.php on line 39
