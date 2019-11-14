@@ -24,7 +24,7 @@ function mostraTabela(dados,elid) {
             itens.map(([key, value]) => {
                 if(key==='nome'){
                     table += `<td><img 
-                                    src='${urlapi}/upfile/${value}' 
+                                    src='${urlapi}/upfiles/${value}' 
                                     width=120 height=120
                                     style='border-radius:100%'></img></td>
                                     <td><ul style='list-style:none'>`
