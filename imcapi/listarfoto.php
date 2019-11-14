@@ -6,7 +6,7 @@ if(!$conn)
 $sql = "SELECT id,name,altura,peso,imc,foto.nome FROM imc LEFT JOIN foto ON foto.idImc = imc.id ORDER BY id DESC Limit 5"; //Limita até as primeiras cinco posições
 
 $result = mysqli_query($conn, $sql);
-
+if($result){
 if (mysqli_num_rows($result) > 0) { 
  
     $rows = mysqli_fetch_all($result,MYSQLI_ASSOC);
@@ -34,5 +34,8 @@ if (mysqli_num_rows($result) > 0) {
 }else{
     echo json_encode([]);
 }
-
+}else{
+    echo "Erro: ".mysqli_error($conn);
+}
+mysqli_close($conn); 
 ?>
