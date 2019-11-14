@@ -20,7 +20,7 @@ if (mysqli_num_rows($result) > 0) {
     //         $row['nome'] = 'default.jpg';
     //     return $row;
     // },$rows);
-
+    
     foreach($rows as $row){
         if($row['nome']==null)
             $row['nome'] = 'default.jpg';

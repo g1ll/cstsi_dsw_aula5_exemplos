@@ -15,18 +15,24 @@ async function carregaDados(){
 function mostraTabela(dados,elid) {
         div = document.getElementById(elid);
         div.innerHTML = '';
-        let table = '<table border=1>'
+        let table = "<table style='font-family:cursive'>"
         dados.forEach(obj => {
             console.log(obj)
             table += '<tr>'
-            Object.entries(obj).map(([key, value]) => {
+            const itens = Object.entries(obj)
+            itens.reverse();
+            itens.map(([key, value]) => {
                 if(key==='nome'){
-                    table += `<td><img src='http://localhost/cstsi_dsw_aula5_exemplos/imcapi/upfile/${value}' width=100 height=100></img></td>`
+                    table += `<td><img 
+                                    src='${urlapi}/upfile/${value}' 
+                                    width=120 height=120
+                                    style='border-radius:100%'></img></td>
+                                    <td><ul style='list-style:none'>`
                 }else{
-                    table += `<td>${value}</td>`
+                    table += `<li>${key}: ${value}</li>`
                 }
             });
-            table += '</tr>'
+            table += '</ul></td></tr>'
         });
         div.innerHTML += table + '</table>';
     }
