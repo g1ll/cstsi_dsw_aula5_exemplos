@@ -1,5 +1,5 @@
-// const urlapi = "http://localhost/cstsi_dsw_aula5_exemplos/imcapi/";
-const urlapi = "http://localhost//2019/tsi/dsw/aula5/imcapi/";
+const urlapi = "http://localhost/cstsi_dsw_aula5_exemplos/imcapi/";
+// const urlapi = "http://localhost//2019/tsi/dsw/aula5/imcapi/";
 const axiosApi = axios.create(
     {   baseURL:urlapi,
         headers:{'Content-Type':'application/json'}}
