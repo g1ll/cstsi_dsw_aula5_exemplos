@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: 19-Set-2019 às 01:35
--- Versão do servidor: 5.7.27-0ubuntu0.18.04.1
--- PHP Version: 7.2.19-0ubuntu0.18.04.2
+-- Generation Time: Nov 14, 2019 at 12:29 AM
+-- Server version: 5.7.27-0ubuntu0.16.04.1
+-- PHP Version: 7.0.33-0ubuntu0.16.04.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `imc`
+-- Table structure for table `foto`
+--
+
+CREATE TABLE `foto` (
+  `idFoto` bigint(20) NOT NULL,
+  `idImc` int(11) NOT NULL,
+  `nome` varchar(200) COLLATE utf8_bin DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `foto`
+--
+
+INSERT INTO `foto` (`idFoto`, `idImc`, `nome`) VALUES
+(1, 144, '9035474.jpeg'),
+(2, 145, 'homer.png'),
+(3, 146, 'homer2.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `imc`
 --
 
 CREATE TABLE `imc` (
@@ -37,7 +58,7 @@ CREATE TABLE `imc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Extraindo dados da tabela `imc`
+-- Dumping data for table `imc`
 --
 
 INSERT INTO `imc` (`id`, `name`, `altura`, `peso`, `imc`) VALUES
@@ -176,11 +197,23 @@ INSERT INTO `imc` (`id`, `name`, `altura`, `peso`, `imc`) VALUES
 (135, 'Gill', '1.70000', '88.00000', '30.44983'),
 (136, 'EDIT', '1.70000', '88.00000', '30.44983'),
 (139, 'editado', '2.00000', '3.00000', '0.75000'),
-(141, 'aula13axios', '3.00000', '4.00000', '0.44000');
+(141, 'aula13axios', '3.00000', '4.00000', '0.44000'),
+(142, 'asdf', '1.70000', '85.00000', '29.41000'),
+(143, 'adsf', '1.80000', '80.00000', '24.69000'),
+(144, 'asdf', '1.80000', '80.00000', '24.69000'),
+(145, 'Fulano', '1.90000', '90.00000', '24.93000'),
+(146, 'Fulano', '1.90000', '90.00000', '24.93000');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `foto`
+--
+ALTER TABLE `foto`
+  ADD PRIMARY KEY (`idFoto`),
+  ADD KEY `idImc` (`idImc`);
 
 --
 -- Indexes for table `imc`
@@ -193,10 +226,26 @@ ALTER TABLE `imc`
 --
 
 --
+-- AUTO_INCREMENT for table `foto`
+--
+ALTER TABLE `foto`
+  MODIFY `idFoto` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `imc`
 --
 ALTER TABLE `imc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=142;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `foto`
+--
+ALTER TABLE `foto`
+  ADD CONSTRAINT `foto_ibfk_1` FOREIGN KEY (`idImc`) REFERENCES `imc` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
