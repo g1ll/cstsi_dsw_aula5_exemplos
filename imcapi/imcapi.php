@@ -62,4 +62,3 @@ function atualizar($obj){
     $resultado = mysqli_query($conn, $sql);
     return $resultado;
 }
-    
