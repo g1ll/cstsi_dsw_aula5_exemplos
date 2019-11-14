@@ -26,7 +26,7 @@ function mostraTabela(dados,elid) {
                     table += `<td>${value}</td>`
                 }
             });
-            table += '</tr>'
+           sql table += '</tr>'
         });
         div.innerHTML += table + '</table>';
     }
