@@ -30,12 +30,12 @@ if (mysqli_num_rows($result) > 0) {
     echo json_encode($jsonData);
     
     mysqli_free_result($result);
-    mysqli_close($conn); 
 }else{
     echo json_encode([]);
 }
 }else{
     echo "Erro: ".mysqli_error($conn);
 }
-mysqli_close($conn); 
+if($conn)
+    mysqli_close($conn); 
 ?>
