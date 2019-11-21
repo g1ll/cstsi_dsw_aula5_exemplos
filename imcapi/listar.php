@@ -1,5 +1,5 @@
 <?php 
-
+header("Content-Type","application/json");
 function listar(){
     @$conn = mysqli_connect('localhost', 'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
 if(!$conn)

@@ -8,3 +8,8 @@ Stack trace:
   thrown in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/listarfoto.php on line 38
 [14-Nov-2019 00:35:17 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'mysqli_error' (T_STRING), expecting ',' or ';' in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/listarfoto.php on line 39
 [14-Nov-2019 00:39:12 America/Sao_Paulo] PHP Warning:  mysqli_close(): Couldn't fetch mysqli in /media/Dados/Público/www/2019/tsi/dsw/aula5/imcapi/listarfoto.php on line 40
+[20-Nov-2019 17:31:28 America/Sao_Paulo] PHP Notice:  Undefined variable: foto in /media/Dados/Arquivos/Gill/htdocs/cstsi_dsw_aula5_exemplos/imcapi/file.php on line 26
+[21-Nov-2019 14:58:35 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function lista() in /media/Dados/Arquivos/Gill/htdocs/cstsi_dsw_aula5_exemplos/imcapi/index.php:29
+Stack trace:
+#0 {main}
+  thrown in /media/Dados/Arquivos/Gill/htdocs/cstsi_dsw_aula5_exemplos/imcapi/index.php on line 29

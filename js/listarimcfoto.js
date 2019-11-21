@@ -6,13 +6,18 @@ const axiosApi = axios.create(
         );
 
 async function carregaDados(){
-    const resp = await axiosApi.get('listarfoto.php');
-    const list = resp.data;
-    console.table(list);
-    mostraTabela(list,'dados');
+    try{
+        const resp = await axiosApi.get('listarfoto.php');
+        const list = resp.data;
+        console.table(list);
+        mostrar(list,'dados');
+    }catch(e){
+        console.log(e)
+        alert("Erro ao carregar Dados!");
+    }
 }
 
-function mostraTabela(dados,elid) {
+function mostrar(dados,elid) {
         div = document.getElementById(elid);
         div.innerHTML = '';
         let table = "<table style='font-family:cursive'>"
