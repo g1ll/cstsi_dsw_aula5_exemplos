@@ -8,17 +8,17 @@ $peso = filter_input(INPUT_POST,'peso',FILTER_SANITIZE_STRING); //filtra entrada
 $imc = filter_input(INPUT_POST,'imc',FILTER_SANITIZE_STRING); //filtra entrada
 
 echo "RESPONSE:\n";
-var_dump([$_POST, $_FILES]);die;
+// var_dump([$_POST, $_FILES]);die;
 
 if(isset($_FILES['arquivo'])){
     $arquivo = $_FILES['arquivo'];
     $temporario = $arquivo['tmp_name'];
     $arquivo_salvo = __DIR__."/upfiles/".$arquivo['name'];
     if(move_uploaded_file($temporario,$arquivo_salvo)){
-        echo "\n<br>Arquivo $arquivo[name] Salvo!";
+        $mensagem =  "\n<br>Arquivo $arquivo[name] Salvo!";
         $foto = $arquivo['name'];
     }else{
-        echo "\n<br>Erro ao salvar $arquivo[name] !";
+        $mensagem  = "\n<br>Erro ao salvar $arquivo[name] !";
         $foto = NULL;
     }
 }
