@@ -26,7 +26,8 @@ $method =  $_SERVER['REQUEST_METHOD'];
 if($_GET){
     $query = $_GET['q'];
     if($query==="listar")
-        listar();
+        $query();   
+    
 }
 
 ?>
