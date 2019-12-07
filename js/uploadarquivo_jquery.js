@@ -2,7 +2,7 @@
 const urlapi = "http://localhost/2019/tsi/dsw/aula5/imcapi/"; //TROCAR URL
 
 document.cadastro.foto.onchange = function(e){
-    const div = document.getElementById('fotoselec');
+    const div = $('#fotoselec');
     div.innerHTML='';
     const img = document.createElement('img');
     img.file = e.target.files[0];
@@ -34,7 +34,7 @@ document.cadastro.onsubmit = function(e) {
          dataform.append(key, value) });
 
     //const arquivo = this.foto.files[0];
-    const arquivo = document.getElementById("foto").files[0];
+    const arquivo = $("#foto").files[0];
     console.log(arquivo);
 
     dataform.append('arquivo',arquivo);
