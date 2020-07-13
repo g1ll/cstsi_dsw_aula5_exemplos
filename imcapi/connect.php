@@ -1,6 +1,6 @@
 <?php
-include "config.php"
-$conn = mysqli_connect('localhost', $dbuser, $dbpass, $dbname);
+include "config.php";
+$conn = mysqli_connect($host, $dbuser, $dbpass, $dbname);
 if (!$conn) {
 	$conn = mysqli_connect('localhost', 'root', 'r00t', 'imcApi');
 	if(!$conn){
