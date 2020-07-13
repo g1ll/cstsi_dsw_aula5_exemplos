@@ -38,9 +38,7 @@ if($metodo==='delete'){
 }
 
 function deletar($id){
-     @$conn = mysqli_connect('localhost', 'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
-    if(!$conn)
-        $conn = mysqli_connect('localhost', 'root', 'r00t', 'imcApi');
+    require_once 'connect.php';
      $id = filter_var($id,FILTER_SANITIZE_NUMBER_INT);
      $sql = "DELETE FROM imc WHERE id = $id";
      $resultado = mysqli_query($conn, $sql);
@@ -48,9 +46,7 @@ function deletar($id){
 }     
 
 function atualizar($obj){
-    @$conn = mysqli_connect('localhost', 'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
-    if(!$conn)
-        $conn = mysqli_connect('localhost', 'root', 'r00t', 'imcApi');
+   require_once 'connect.php';
     
     $name = filter_var($obj->name,FILTER_SANITIZE_STRING); //filtra entrada
     $alt = filter_var($obj->altura,FILTER_SANITIZE_NUMBER_FLOAT,FILTER_FLAG_ALLOW_FRACTION); //filtra entrada

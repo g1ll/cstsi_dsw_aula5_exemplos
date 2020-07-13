@@ -5,9 +5,7 @@ header('Access-Control-Allow-Methods: *');
 header('Access-Control-Allow-Origin: *');
 //header('Access-Control-Allow-Headers: Host, Connection, Accept, Authorization, Content-Type, X-Requested-With, User-Agent, Referer, Methods');
 //Alterar dados do user e password
-@$conn = mysql_connect('localhost', 'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
-if(!$conn)
-    $conn = mysql_connect('localhost', 'root', 'r00t', 'imcApi');
+require_once 'connect.php';
 
 $busca = (isset($_GET['busca']))?"WHERE name LIKE '%$_GET[busca]%'":"";
 

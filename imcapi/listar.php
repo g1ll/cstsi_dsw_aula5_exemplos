@@ -1,9 +1,7 @@
 <?php 
 header("Content-Type","application/json");
 function listar(){
-    @$conn = mysqli_connect('localhost', 'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
-if(!$conn)
-    $conn = mysqli_connect('localhost', 'root', 'r00t', 'imcApi');
+    require_once 'connect.php';
 $sql = "SELECT * FROM imc ORDER BY id DESC Limit 10"; //Limita até as primeiras cinco posições
 
 $result = mysqli_query($conn, $sql);

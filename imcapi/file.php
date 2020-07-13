@@ -24,9 +24,7 @@ if(isset($_FILES['arquivo'])){
 }
 
 if ($name && $alt && $peso  && $imc && $foto) {//Testa se digitaram todos os campos
-   @$conn = mysqli_connect('localhost',  'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
-    if(!$conn)
-    $conn = mysqli_connect('localhost', 'root', 'r00t', 'imcApi');
+   require_once 'connect.php';
     mysqli_begin_transaction($conn);
     //Alterar dados do user e password
     //$conn = mysqli_connect("host=localhost port=3306 dbname=snake user=root password=root");

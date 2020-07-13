@@ -6,9 +6,7 @@ header('Access-Control-Allow-Methods: *');
 header('Access-Control-Allow-Origin: *');
 //header('Access-Control-Allow-Headers: Host, Connection, Accept, Authorization, Content-Type, X-Requested-With, User-Agent, Referer, Methods');
 //Alterar dados do user e password
-@$conn = mysqli_connect('localhost', 'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
-if(!$conn)
-    $conn = mysqli_connect('localhost', 'root', 'r00t', 'imcApi');
+require_once 'connect.php';
 
 //$busca=(isset($_GET['busca']))?$_GET['busca']:'';//Vulnerável à injeção de SQL ("termoDeBusca' or 1=1; --")
 

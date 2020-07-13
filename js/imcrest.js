@@ -14,7 +14,7 @@ switch(opt){
         break;
     case 3:require('./edita.js');
         break;
-    case 4:require('./deleta.js');;
+    case 4:require('./deleta.js');
         break;
         default: console.log('Erro');
 }

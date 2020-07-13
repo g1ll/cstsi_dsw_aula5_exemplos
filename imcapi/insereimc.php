@@ -10,7 +10,7 @@ $peso = filter_input(INPUT_POST,'peso',FILTER_SANITIZE_STRING); //filtra entrada
 
 if ($name && $alt && $peso) {//Testa se digitaram todos os campos
     $imc = $peso/$alt**2;
-    $conn = mysqli_connect('localhost',  'id2581340_1mc', '1mc@g1ll', 'id2581340_imc');
+    require_once 'connect.php';
     //Alterar dados do user e password
     //$conn = mysqli_connect("host=localhost port=3306 dbname=snake user=root password=root");
     //Cria o comando SQL e guarda na variável $sql
